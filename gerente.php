@@ -6,7 +6,7 @@ class gerente extends funcionario
 {
   public $senha;
   function calculaBonificacao(){
-    $this->bonificacao += ($this->salario * 0.6 + 100);
+    return parent::calculaBonificacao() + 1000;
   }
 
 
