@@ -5,4 +5,7 @@ require_once 'funcionario.php';
 class gerente extends funcionario
 {
   public $senha;
+  function calculaBonificacao(){
+    $this->bonificacao += ($this->salario * 0.6 + 100);
+  }
 }
